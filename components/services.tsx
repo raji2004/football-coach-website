@@ -72,7 +72,7 @@ export default function Services() {
                 <img
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center group-hover:scale-125 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
               </div>

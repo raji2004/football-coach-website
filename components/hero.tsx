@@ -70,7 +70,7 @@ export default function Hero() {
               <img
                 src="/hero.jpeg"
                 alt="Football player training"
-                className="relative w-full h-full object-cover rounded-3xl shadow-2xl animate-glow-pulse"
+                className="relative w-full h-full object-cover object-center rounded-3xl shadow-2xl animate-glow-pulse"
               />
             </div>
           </div>
