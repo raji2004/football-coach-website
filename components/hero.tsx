@@ -29,19 +29,19 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden flex items-center"
     >
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-teal-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+        <div className="absolute -top-10 -right-10 w-48 h-48 sm:top-20 sm:right-20 sm:w-96 sm:h-96 bg-teal-500 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-10 -left-10 w-48 h-48 sm:bottom-20 sm:left-20 sm:w-96 sm:h-96 bg-blue-400 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="z-10 space-y-8">
             <div className="animate-slide-down">
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-gray-900 mb-2 text-balance leading-tight tracking-tight">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-2 text-balance leading-tight tracking-tight">
                 We Put In
               </h1>
-              <h2 className="text-6xl sm:text-7xl lg:text-8xl font-black bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent mb-8 text-balance leading-tight tracking-tight">
+              <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent mb-8 text-balance leading-tight tracking-tight">
                 The Method
               </h2>
             </div>

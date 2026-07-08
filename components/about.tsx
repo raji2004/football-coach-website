@@ -34,14 +34,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <div className="space-y-8">
             <div ref={titleRef} className="animate-slide-down">
-              <h2 className="text-6xl sm:text-7xl font-black text-gray-900 mb-2 tracking-tight">10+</h2>
-              <h3 className="text-5xl sm:text-6xl font-black bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent mb-8 tracking-tight">
+              <h2 className="text-6xl sm:text-7xl font-black text-gray-900 mb-2 tracking-tight">2+</h2>
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent mb-8 tracking-tight text-balance">
                 Years of Excellence
               </h3>
             </div>
             <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <p className="text-lg text-gray-700 leading-relaxed font-medium">
-                With over a decade of professional coaching experience, I specialize in developing young talent from
+                With over two years of professional coaching experience, I specialize in developing young talent from
                 grassroots to advanced levels. My mission is transforming potential into performance.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed font-medium">
@@ -50,17 +50,17 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-8 rounded-2xl border border-teal-200 hover:shadow-lg transition-shadow duration-300 animate-count-up">
-                <p className="text-4xl font-black text-teal-600 mb-2">500+</p>
-                <p className="font-black text-gray-900 text-sm tracking-wide">PLAYERS TRAINED</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+              <div className="min-w-0 bg-gradient-to-br from-teal-50 to-blue-50 p-5 sm:p-8 rounded-2xl border border-teal-200 hover:shadow-lg transition-shadow duration-300 animate-count-up">
+                <p className="text-4xl font-black text-teal-600 mb-2">30</p>
+                <p className="font-black text-gray-900 text-xs sm:text-sm tracking-wide leading-tight">PLAYERS TRAINED</p>
               </div>
               <div
-                className="bg-white p-8 rounded-2xl border-2 border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all duration-300 animate-count-up"
+                className="min-w-0 bg-white p-5 sm:p-8 rounded-2xl border-2 border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all duration-300 animate-count-up"
                 style={{ animationDelay: "0.4s" }}
               >
                 <p className="text-4xl font-black text-teal-600 mb-2">100%</p>
-                <p className="font-black text-gray-900 text-sm tracking-wide">SATISFACTION</p>
+                <p className="font-black text-gray-900 text-xs sm:text-sm tracking-wide leading-tight">SATISFACTION</p>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function About() {
           <div className="relative animate-float">
             <div className="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
             <div className="relative w-full h-96 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-              <img src="/soccer-coach-training-session.jpg" alt="Football coaching" className="w-full h-full object-cover" />
+              <img src="/hero.jpeg" alt="Football coaching" className="w-full h-full object-cover object-center" />
             </div>
           </div>
         </div>

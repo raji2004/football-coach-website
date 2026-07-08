@@ -49,7 +49,7 @@ export default function Contact() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 animate-slide-down">
-          <h2 className="text-6xl sm:text-7xl font-black text-gray-900 mb-2 text-center tracking-tight">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-2 text-center tracking-tight text-balance px-2">
             GET IN TOUCH
           </h2>
           <p className="text-center text-gray-600 text-lg font-medium">Let's discuss your coaching journey</p>
@@ -72,7 +72,7 @@ export default function Contact() {
 
             <div className="bg-white p-8 rounded-2xl border-2 border-teal-200 hover:border-teal-500 hover:shadow-lg transition-all duration-300">
               <h3 className="text-lg font-black text-teal-600 mb-3 tracking-wide">EMAIL</h3>
-              <a href="mailto:abdullaholadega@gmail.com" className="text-gray-700 font-semibold hover:text-teal-600 transition">
+              <a href="mailto:abdullaholadega@gmail.com" className="text-gray-700 font-semibold hover:text-teal-600 transition break-all">
                 abdullaholadega@gmail.com
               </a>
             </div>

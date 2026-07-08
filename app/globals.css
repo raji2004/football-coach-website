@@ -272,7 +272,22 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  span,
+  label,
+  button {
+    overflow-wrap: anywhere;
   }
 }

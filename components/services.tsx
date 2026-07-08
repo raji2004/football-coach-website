@@ -45,6 +45,11 @@ export default function Services() {
       description: "Team building • Match preparation",
       image: "/group-session.jpeg",
     },
+    {
+      title: "Fitness Training",
+      description: "Strength & conditioning • Speed & agility",
+      image: "/football-player-kicking-ball-teal-jersey.jpg",
+    },
   ];
 
   return (
@@ -54,15 +59,15 @@ export default function Services() {
       className="py-32 px-4 sm:px-6 lg:px-8 bg-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 animate-slide-down">
-          <h2 className="text-6xl sm:text-7xl font-black text-gray-900 mb-6 text-center tracking-tight">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-6 text-center tracking-tight text-balance px-2">
             SERVICES
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-            Comprehensive football coaching tailored to your level and goals
+            Comprehensive football coaching and fitness training tailored to your level and goals
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <div
               key={idx}
@@ -76,8 +81,8 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-black text-gray-900 group-hover:text-teal-600 transition duration-300 tracking-tight">
+              <div className="space-y-3 min-w-0">
+                <h3 className="text-xl font-black text-gray-900 group-hover:text-teal-600 transition duration-300 tracking-tight text-balance">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">

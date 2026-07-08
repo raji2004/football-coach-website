@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-200 pt-12 text-center text-gray-600 font-semibold">
-          <p>&copy; 2025 Coach Pro. All rights reserved. | Whittington Park</p>
+          <p className="text-sm sm:text-base text-balance px-2">&copy; 2025 Coach Pro. All rights reserved. | Whittington Park</p>
         </div>
       </div>
     </footer>

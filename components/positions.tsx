@@ -37,7 +37,7 @@ export default function Positions() {
   return (
     <section ref={containerRef} id="positions" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-6xl sm:text-7xl font-black text-gray-900 mb-20 text-center animate-slide-down tracking-tight">
+        <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-20 text-center animate-slide-down tracking-tight text-balance px-2">
           SPECIALIZED POSITIONS
         </h2>
 
@@ -52,7 +52,7 @@ export default function Positions() {
                 <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg">
                   {pos.code}
                 </div>
-                <h3 className="text-lg font-black text-gray-900 tracking-wide">{pos.name}</h3>
+                <h3 className="min-w-0 text-lg font-black text-gray-900 tracking-wide">{pos.name}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {pos.skills.map((skill, i) => (
@@ -65,8 +65,11 @@ export default function Positions() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-3xl p-16 text-center border-none animate-fade-in-up shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-          <h3 className="text-5xl sm:text-6xl font-black mb-8 tracking-tight">PROFESSIONAL EQUIPMENT</h3>
+        <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-3xl p-6 sm:p-10 lg:p-16 text-center border-none animate-fade-in-up shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+          <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-8 tracking-tight px-2">
+            <span className="whitespace-nowrap">PROFESSIONAL</span>{" "}
+            <span className="whitespace-nowrap">EQUIPMENT</span>
+          </h3>
           <p className="text-lg mb-12 text-white/90 font-medium">All sessions include elite training gear:</p>
           <div className="flex flex-wrap justify-center gap-4">
             {["Agility Ladders", "Training Cones", "Premier League Balls", "Resistance Bands"].map((item, idx) => (
