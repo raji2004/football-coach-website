@@ -1,13 +1,13 @@
 export type Service = {
-  slug: string
-  title: string
-  description: string
-  image: string
-  video: string
-  tagline: string
-  summary: string
-  offerings: string[]
-}
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  video: string;
+  tagline: string;
+  summary: string;
+  offerings: string[];
+};
 
 export const services: Service[] = [
   {
@@ -95,8 +95,8 @@ export const services: Service[] = [
       "Programmes adapted to your current fitness",
     ],
   },
-]
+];
 
 export function getServiceBySlug(slug: string): Service | undefined {
-  return services.find((service) => service.slug === slug)
+  return services.find((service) => service.slug === slug);
 }
