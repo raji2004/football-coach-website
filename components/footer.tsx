@@ -46,7 +46,7 @@ export default function Footer() {
             <ul className="space-y-4 text-gray-600">
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="hover:text-teal-600 transition font-semibold hover:translate-x-2 inline-block duration-300"
                 >
                   About
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="hover:text-teal-600 transition font-semibold hover:translate-x-2 inline-block duration-300"
                 >
                   Services
@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#positions"
+                  href="/#positions"
                   className="hover:text-teal-600 transition font-semibold hover:translate-x-2 inline-block duration-300"
                 >
                   Positions
@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="hover:text-teal-600 transition font-semibold hover:translate-x-2 inline-block duration-300"
                 >
                   Contact
