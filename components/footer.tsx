@@ -31,9 +31,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-16 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center rounded-lg font-black text-xl shadow-lg">
-                ⚽
-              </div>
+              <img
+                src="/logo.jpeg"
+                alt="Coach logo"
+                className="w-12 h-12 rounded-lg object-cover object-center shadow-lg"
+              />
               <h3 className="text-2xl font-black text-gray-900 tracking-tight">COACH</h3>
             </div>
             <p className="text-gray-600 font-medium leading-relaxed">

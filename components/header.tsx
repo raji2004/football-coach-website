@@ -20,9 +20,11 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center rounded-lg font-black text-lg shadow-lg">
-              ⚽
-            </div>
+            <img
+              src="/logo.jpeg"
+              alt="Coach logo"
+              className="w-10 h-10 rounded-lg object-cover object-center shadow-lg"
+            />
             <h1 className="text-2xl font-black text-gray-900 hidden sm:block tracking-tight">COACH</h1>
           </Link>
 
