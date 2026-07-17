@@ -30,13 +30,13 @@ export default function Services() {
     <section
       ref={containerRef}
       id="services"
-      className="py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white relative">
+      className="py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background relative">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 sm:mb-16 lg:mb-20 animate-slide-down">
-          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-6 text-center tracking-tight text-balance px-2">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-foreground mb-6 text-center tracking-tight text-balance px-2">
             SERVICES
           </h2>
-          <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-center text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
             Comprehensive football coaching and fitness training tailored to
             your level and goals
           </p>
@@ -46,7 +46,7 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={service.slug}
-              className="group animate-fade-in-up hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden flex flex-col"
+              className="group animate-fade-in-up hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 rounded-2xl overflow-hidden flex flex-col"
               style={{ animationDelay: `${idx * 0.15}s` }}>
               <Link href={`/services/${service.slug}`} className="block flex-1">
                 <div className="relative overflow-hidden mb-4 sm:mb-5 w-full aspect-[3/4] rounded-2xl">
@@ -58,10 +58,10 @@ export default function Services() {
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-500" />
                 </div>
                 <div className="space-y-2 min-w-0 px-1">
-                  <h3 className="text-xl font-black text-gray-900 group-hover:text-teal-600 transition duration-300 tracking-tight text-balance">
+                  <h3 className="text-xl font-black text-foreground group-hover:text-primary transition duration-300 tracking-tight text-balance">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -69,7 +69,7 @@ export default function Services() {
               <div className="px-1 pt-4 pb-1 mt-auto">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="block w-full py-3 border-2 border-teal-500 text-teal-600 font-black rounded-full hover:bg-teal-600 hover:text-white transition-all duration-300 text-sm tracking-wide transform hover:scale-105 text-center">
+                  className="block w-full py-3 border-2 border-primary text-primary font-black rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-sm tracking-wide transform hover:scale-105 active:scale-95 text-center">
                   EXPLORE
                 </Link>
               </div>

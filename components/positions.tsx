@@ -35,9 +35,9 @@ export default function Positions() {
   ]
 
   return (
-    <section ref={containerRef} id="positions" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
+    <section ref={containerRef} id="positions" className="py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-20 text-center animate-slide-down tracking-tight text-balance px-2">
+        <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-foreground mb-20 text-center animate-slide-down tracking-tight text-balance px-2">
           SPECIALIZED POSITIONS
         </h2>
 
@@ -45,18 +45,18 @@ export default function Positions() {
           {positions.map((pos, idx) => (
             <div
               key={idx}
-              className="bg-white border-2 border-gray-200 p-8 rounded-2xl hover:shadow-xl hover:border-teal-500 transition-all duration-300 transform hover:scale-105 animate-scale-in"
+              className="bg-card border-2 border-border p-8 rounded-2xl hover:shadow-xl hover:border-primary transition-all duration-300 transform hover:scale-105 animate-scale-in"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-pitch to-pitch-deep text-lime rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg">
                   {pos.code}
                 </div>
-                <h3 className="min-w-0 text-lg font-black text-gray-900 tracking-wide">{pos.name}</h3>
+                <h3 className="min-w-0 text-lg font-black text-foreground tracking-wide">{pos.name}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {pos.skills.map((skill, i) => (
-                  <span key={i} className="px-4 py-2 bg-teal-100 text-teal-700 text-xs font-black rounded-full">
+                  <span key={i} className="px-4 py-2 bg-primary/10 text-primary text-xs font-black rounded-full">
                     {skill}
                   </span>
                 ))}
@@ -65,8 +65,8 @@ export default function Positions() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-3xl p-6 sm:p-10 lg:p-16 text-center border-none animate-fade-in-up shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-          <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-8 tracking-tight px-2">
+        <div className="bg-gradient-to-r from-pitch to-pitch-deep text-white rounded-3xl p-6 sm:p-10 lg:p-16 text-center border-none animate-fade-in-up shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+          <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-8 tracking-tight px-2 text-lime">
             <span className="whitespace-nowrap">PROFESSIONAL</span>{" "}
             <span className="whitespace-nowrap">EQUIPMENT</span>
           </h3>
@@ -75,7 +75,7 @@ export default function Positions() {
             {["Agility Ladders", "Training Cones", "Premier League Balls", "Resistance Bands"].map((item, idx) => (
               <span
                 key={idx}
-                className="px-6 py-3 bg-white text-teal-600 font-black rounded-full border-none hover:scale-110 transition-transform duration-300 text-sm tracking-wide"
+                className="px-6 py-3 bg-white text-pitch-deep font-black rounded-full border-none hover:scale-110 transition-transform duration-300 text-sm tracking-wide"
               >
                 {item}
               </span>
